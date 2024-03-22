@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 #include <vector>
 #include <list>
 
@@ -10,7 +10,6 @@ class Point
 public:
 	int y;
 	Point(int x) : y(x) {}
-
 };
 
 int main()
@@ -23,21 +22,11 @@ int main()
 	}
 
 
-	list<Point> obj2;
-
-	for (int i = 1; i <= 5; ++i) 
-	{
-		Point p(i);
-		obj2.push_back(p);
-	}
+	list<Point> obj2 {1,2,3,4,5};
 
 	for (const auto& point : obj2) 
 	{
 		cout << "List: " << point.y << endl;
 	}
-
-
-	
-
 }
 
